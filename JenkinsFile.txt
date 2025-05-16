@@ -3,18 +3,18 @@ pipeline {
 
     environment {
         AZURE_CREDENTIALS_ID = 'azure-service-principal' // Must be configured in Jenkins credentials
-        ACR_NAME = "acrkhushveer01"
-        ACR_LOGIN_SERVER = "acrkhushveer01.azurecr.io"
-        IMAGE_NAME = "mywebapikhushveer"
+        ACR_NAME = "acratul01"
+        ACR_LOGIN_SERVER = "acratul01.azurecr.io"
+        IMAGE_NAME = "mywebapiatul"
         TAG = "v1"
         RESOURCE_GROUP = "my-rg"
-        AKS_CLUSTER_NAME = "akskhushveer01"
+        AKS_CLUSTER_NAME = "aksatul01"
     }
 
     stages {
         stage('Checkout') {
     steps {
-        git branch: 'master', url: 'https://github.com/Khushveer01/ApiContainer.git'
+        git branch: 'master', url: 'https://github.com/atulb01/ApiContainer.git'
     }
 }
 
